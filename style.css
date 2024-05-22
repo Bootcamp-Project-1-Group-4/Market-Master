@@ -1,1 +1,21 @@
+*  {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
 
+
+.bgDoggys{
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 350px;
+    width: 100%;
+    border: 5px solid rgba(0, 0, 0, 0.779);
+    padding: 25px;
+
+   
+
+}
