@@ -28,10 +28,13 @@ nav {
   z-index: 10;
 }
 
+.img-container {
+  width: 33%;
+}
 nav img {
   width: 80px;
+  height: auto;
 }
-
 nav .input {
   display: flex;
   justify-content: space-between;
@@ -39,7 +42,7 @@ nav .input {
   width: 400px;
   height: 40px;
   border-radius: 5px;
-  padding:0 20px 0 20px;
+  padding: 0 20px 0 20px;
   background-color: white;
 }
 
@@ -58,13 +61,15 @@ nav .input img {
 nav ul {
   display: flex;
   gap: 20px;
+  width: 33%;
+  justify-content: end;
 }
 
 nav ul a {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   font-weight: bold;
 }
 
@@ -116,7 +121,6 @@ nav ul a:hover {
   font-size: 20px;
 }
 
-
 .logo {
   font-weight: 900;
   font-size: 40px;
@@ -137,5 +141,16 @@ nav ul a:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
+.crypto a {
+  margin: 20px;
+  width: 256px;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stats div {
+  display: flex;
+  align-items: center;
+}
