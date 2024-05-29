@@ -1,1 +1,144 @@
 
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  } 
+
+  * {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    font-style: normal; 
+
+  }
+  header {
+    width: 100vw;
+    height: 8vh;
+    background-color: grey;
+    border: 3px;
+    border-style:solid;
+    border-color: rgb(20, 29, 23);
+  }
+
+  h1 {
+    margin-top: 10px;
+    margin-left: 100px;
+    color: whitesmoke;
+    font-weight: 700;
+    
+  }
+header div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 85%;
+    margin-top: -40px;
+}
+
+ header div button {
+    background-color: whitesmoke;
+    border-radius: 20%;
+    border-color: black;
+    margin-left: 10px
+ }
+
+ #bgimg1 {
+    margin: 0;
+    padding: 0;
+    background-image: url(bgnumbers.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+
+ 
+#bgImg2 {
+    flex: auto;
+    margin-top: 5px;
+    padding: 10px;
+    margin-left: 720px;
+    width: 400px;
+    
+}
+.flex-container {
+    display: flex ;
+    line-height: 100px;
+    text-align: center;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.box{
+
+    width: 500px;
+    height: 600px;
+    background-color: grey;
+    border: 5px solid rgb(20, 29, 23);
+    margin: 0 auto;
+    margin-top: 50px;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.about{
+    color: whitesmoke;
+}
+
+.Btn2{
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px;
+    justify-content: space-between 100px;
+    
+    
+}
+
+#btnEl2 {
+    width: 200px;
+    margin-left: 750px;
+}
+
+
+
