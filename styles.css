@@ -28,11 +28,32 @@ nav {
   z-index: 10;
 }
 
-nav img {
-  width: 80px;
+.logo-container {
+  width: 33%;
 }
 
-nav .input {
+.logo {
+  border-radius: 50%;
+  background-color: gold;
+  color: orange;
+  border: 5px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  font-size:x-large;
+}
+
+.input-container {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  overflow:auto;
+  flex-grow: 1;
+}
+
+.input-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,21 +64,23 @@ nav .input {
   background-color: white;
 }
 
-nav input {
+input {
   border: none;
   outline: none;
   font-size: 20px;
   width: 100%;
 }
 
-nav .input img {
+.input-box img {
   height: 20px;
   width: auto;
 }
 
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 80px;
+  width: 33%;
+  justify-content: end;
 }
 
 nav ul a {
@@ -97,18 +120,21 @@ nav ul a:hover {
 
 .global-stats {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   background-color: white;
   border-radius: 10px;
   width: 1000px;
-  padding: 40px;
+  height: 200px;
   font-size: 20px;
   justify-content: space-between;
   box-shadow: 1px 1px 10px gray;
+  justify-content: center;
+  align-items: center;
 }
 
 .global-stats h1 {
   font-size: 16px;
+  margin-bottom: 10px;
   color: gray;
 }
 
@@ -116,8 +142,7 @@ nav ul a:hover {
   font-size: 20px;
 }
 
-
-.logo {
+.title {
   font-weight: 900;
   font-size: 40px;
   color: blue;
@@ -125,7 +150,6 @@ nav ul a:hover {
 
 .tagline {
   font-size: 24px;
-  font-weight: bold;
   font-weight: 900;
   margin-bottom: 20px;
 }

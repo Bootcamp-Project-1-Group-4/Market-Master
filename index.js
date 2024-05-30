@@ -6,19 +6,24 @@ const options = {
 	}
 };
 
-let cryptos
-let crytpoDetails
-let cryptoHistory
-
 const fetchCryptos = async () => {
   try {
     const response = await fetch('https://coinranking1.p.rapidapi.com/coins?limit=100', options);
-    cryptos = await response.json();
-    console.log(cryptos);
+    const json = await response.json();
+    const data = json.data
+    const stats = data.stats
+    console.log(stats)
+    document.getElementById('cryptos').innerText=`$${stats.total.toLocaleString()}`
+    document.getElementById('markets').innerText=`$${stats.totalMarkets.toLocaleString()}`
+    document.getElementById('exchanges').innerText=`$${stats.totalExchanges.toLocaleString()}`
+    document.getElementById('market-cap').innerText=`$${Math.round(stats.totalMarketCap/1000000000).toLocaleString()} Billion`
+    document.getElementById('volume').innerText=`$${Math.round(stats.total24hVolume/1000000000).toLocaleString()} Billion`
   } catch (error) {
     console.error(error);
   }
 }
+
+document.addEventListener("DOMContentLoaded", fetchCryptos);
 
 /* const fetchCryptoDetails = async (coindId) => {
   try {
@@ -39,16 +44,3 @@ const fetchCryptoHistory = async (coindId, timePeriod) => {
     console.error(error);
   }
 } */
-
-document.addEventListener('DOMContentLoaded', fetchCryptos);
-
-const crypto = () => {
-  // link global stats values to global stats box
-  const stats = cryptos.data.stats
-  const total = stats.total
-  const volume = stats.total24hVolume
-  const coins = stats.totalCoins
-  const exchanges = stats.totalExchanges
-  const cap = stats.totalMarketCap
-  const markets = stats.totalMarkets
-}
