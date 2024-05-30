@@ -4,16 +4,13 @@
   margin: 0;
   padding: 0;
 }
-
 *::-webkit-scrollbar {
   display: none;
 }
-
 .body {
   padding: 0;
   margin: 0;
 }
-
 nav {
   height: 100px;
   width: 100vw;
@@ -27,12 +24,29 @@ nav {
   align-items: center;
   z-index: 10;
 }
-
-nav img {
-  width: 80px;
+.logo-container {
+  width: 33%;
 }
-
-nav .input {
+.logo {
+  border-radius: 50%;
+  background-color: gold;
+  color: orange;
+  border: 5px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  font-size:x-large;
+}
+.input-container {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  overflow:auto;
+  flex-grow: 1;
+}
+.input-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,24 +56,22 @@ nav .input {
   padding:0 20px 0 20px;
   background-color: white;
 }
-
-nav input {
+input {
   border: none;
   outline: none;
   font-size: 20px;
   width: 100%;
 }
-
-nav .input img {
+.input-box img {
   height: 20px;
   width: auto;
 }
-
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  width: 33%;
+  justify-content: end;
 }
-
 nav ul a {
   text-decoration: none;
   color: white;
@@ -67,11 +79,9 @@ nav ul a {
   transition-duration: .2s;
   font-weight: bold;
 }
-
 nav ul a:hover {
   color: aqua;
 }
-
 .page {
   width: 100vw;
   height: calc(100vh - 100px);
@@ -81,7 +91,6 @@ nav ul a:hover {
   padding: 40px 20px;
   background-color: lightgray;
 }
-
 .hero {
   width: 100%;
   display: flex;
@@ -89,12 +98,10 @@ nav ul a:hover {
   align-items: center;
   gap: 20px;
 }
-
 .hero img {
   height: 200px;
   width: auto;
 }
-
 .global-stats {
   display: flex;
   gap: 20px;
@@ -106,30 +113,24 @@ nav ul a:hover {
   justify-content: space-between;
   box-shadow: 1px 1px 10px gray;
 }
-
 .global-stats h1 {
   font-size: 16px;
   color: gray;
 }
-
 .global-stats h2 {
   font-size: 20px;
 }
-
-
-.logo {
+.title {
   font-weight: 900;
   font-size: 40px;
   color: blue;
 }
-
 .tagline {
   font-size: 24px;
   font-weight: bold;
   font-weight: 900;
   margin-bottom: 20px;
 }
-
 .crypto {
   width: 100vw;
   padding: 20px;
@@ -137,5 +138,3 @@ nav ul a:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-

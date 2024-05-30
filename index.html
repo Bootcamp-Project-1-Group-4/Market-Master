@@ -12,10 +12,16 @@
 <body id="body">
   <header></header>
   <nav>
-    <img src="public/logo.svg"/>
-    <div class="input">
-      <input placeholder="Search..."></input>
-      <img src="public/search-icon.png"/>
+    <div class="logo-container">
+      <div class="logo">
+        <h1>M</h1>
+      </div>
+    </div>
+    <div class="input-container">
+      <div class="input-box">
+        <input placeholder="Search..."></input>
+        <img src="public/search-icon.png"/>
+      </div>
     </div>
     <ul>
       <a href="/crypto">Crypto</a>
@@ -24,37 +30,43 @@
   </nav>
   <div class="page">
     <section class="hero">
-      <img src="public/logo.svg"/>
-      <h1 class="logo">CRYPTOMATICS</h1>
-      <p class="tagline">GET THE LATEST CRYPTO STATS AND TRENDS IN REAL TIME</p>
+      <h1 class="title">MARKETMASTER</h1>
+      <p class="tagline">Get the latest stats, trends, and tips on the crypto and stock market.</p>
       <h1 class="'global-status-title">Global Stats</h1>
       <div class="global-stats">
         <div>
-          <h1 className="opacity-50">Total Cryptocurrencies</h1>
-          <h2 className="text-2xl"></h2>
-        </div>
-        <div className="mx-0 my-5 sm:mx-10 sm:my-0">
-          <h1 className="opacity-50">Total Exchanges</h1>
-          <h2 className="text-2xl"></h2>
+          <h1>Total Cryptocurrencies</h1>
+          <h2 id="cryptos"></h2>
         </div>
         <div>
-          <h1 className="opacity-50">Total Market Cap</h1>
-          <h2 className="text-2xl"></h2>
-        </div>
-        <div  className="mx-0 my-5 sm:mx-10 sm:my-0">
-          <h1 className="opacity-50">Total 24h Volume</h1>
-          <h2 className="text-2xl"></h2>
+          <h1>Total Exchanges</h1>
+          <h2 id="exchanges"></h2>
         </div>
         <div>
-          <h1 className="opacity-50">Total Markets</h1>
-          <h2 className="text-2xl"></h2>
+          <h1>Total Market Cap</h1>
+          <h2 id="market-cap"></h2>
+        </div>
+        <div>
+          <h1>Total 24h Volume</h1>
+          <h2 id="volume"></h2>
+        </div>
+        <div>
+          <h1>Total Markets</h1>
+          <h2 id="markets"></h2>
         </div>
       </div>
     </section>
     <section class="crypto">
-      
     </section>
   </div>
   <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/millify@6.1.0/dist/options.min.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
