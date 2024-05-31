@@ -12,7 +12,7 @@ const fetchCryptos = async () => {
     const json = await response.json();
     const data = json.data
     const stats = data.stats
-    console.log(stats)
+    console.log(data)
     document.getElementById('cryptos').innerText=`$${stats.total.toLocaleString()}`
     document.getElementById('markets').innerText=`$${stats.totalMarkets.toLocaleString()}`
     document.getElementById('exchanges').innerText=`$${stats.totalExchanges.toLocaleString()}`
@@ -24,6 +24,14 @@ const fetchCryptos = async () => {
 }
 
 document.addEventListener("DOMContentLoaded", fetchCryptos);
+
+const array = [0,1,2,3,4,5]
+
+const nums = array.map((num) => {
+  return num + 
+})
+
+console.log(nums)
 
 /* const fetchCryptoDetails = async (coindId) => {
   try {
