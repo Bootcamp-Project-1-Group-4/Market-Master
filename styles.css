@@ -84,12 +84,12 @@ nav ul a:hover {
 }
 .page {
   width: 100vw;
-  height: calc(100vh - 100px);
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
   background-color: lightgray;
+  gap: 40px;
 }
 .hero {
   width: 100%;
@@ -102,16 +102,25 @@ nav ul a:hover {
   height: 200px;
   width: auto;
 }
-.global-stats {
-  display: flex;
-  gap: 20px;
+
+.global-stats-container {
   background-color: white;
   border-radius: 10px;
   width: 1000px;
   padding: 40px;
   font-size: 20px;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
   box-shadow: 1px 1px 10px gray;
+}
+
+
+.global-stats {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
 }
 .global-stats h1 {
   font-size: 16px;
@@ -131,10 +140,32 @@ nav ul a:hover {
   font-weight: 900;
   margin-bottom: 20px;
 }
-.crypto {
-  width: 100vw;
-  padding: 20px;
+#crypto {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.coin-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  gap: 10px;
+  background-color: white;
+  border-radius: 20px;
+  padding:40px;
+  box-shadow: 1px 1px 10px gray;
+}
+
+.coin-card img {
+  width: 40px;
+}
+
+.coin-card header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
