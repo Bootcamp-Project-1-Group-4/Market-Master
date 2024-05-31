@@ -24,7 +24,7 @@ const fetchCryptos = async () => {
         return (
           `<div class="coin-card">
             <header>
-              <h1>${coin.name}</h1>
+              <h2>${coin.name}</h2>
               <img src=${coin.iconUrl}></img>
             </header>
             <p>Price: $${Math.round(coin.price).toLocaleString()}</p>
