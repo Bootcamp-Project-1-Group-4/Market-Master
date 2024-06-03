@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Inter", sans-serif;
+  @apply box-border m-0 p-0
+}
+
+*::-webkit-scrollbar {
+  @apply hidden
+}
+
+#body {
+  @apply p-0 m-0 w-screen h-screen bg-blue-200
+}
+
+nav {
+  @apply h-24 w-screen flex justify-between bg-blue-800 fixed top-0 px-5 sm:px-10 text-white items-center z-10
+}
+
+#logo-container {
+  @apply w-1/3 hidden sm:block
+}
+
+#logo {
+  border-width: 5px;
+  @apply rounded-full bg-[gold] text-[orange] border-[orange] w-16 h-16 text-4xl font-bold flex items-center justify-center
+}
+
+#input-container {
+  @apply w-1/3 flex sm:justify-center overflow-visible
+}
+
+#input-box {
+  @apply flex justify-center items-center w-96 h-12 rounded-md bg-white px-5
+}
+
+input {
+  @apply border-none outline-none text-xl sm:w-96 text-black w-64
+}
+
+#input-box img {
+  @apply h-5
+}
+
+nav ul {
+  @apply flex gap-5 sm:gap-10 w-1/3 justify-end
+}
+
+nav ul li {
+  @apply text-xl duration-200 cursor-pointer font-bold
+}
+
+nav ul li:hover {
+  @apply text-[aqua]
+}
+
+#page {
+  @apply pt-48 w-full px-10 gap-20
+}
+
+#page header {
+  @apply w-full flex flex-col items-center gap-5 mb-10
+}
+
+#crypto {
+  @apply w-full flex flex-col items-center gap-10
+}
+
+#market-stats {
+  @apply bg-white rounded-lg p-20 flex flex-col lg:flex-row gap-10 shadow-lg justify-center
+}
+
+#market-stats h1 {
+  @apply text-xl mb-2 font-bold
+}
+
+#title {
+  -webkit-text-stroke: 3px orange;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  @apply text-8xl scale-50 sm:scale-75 md:scale-100 text-[gold] font-bold
+}
+
+#tagline {
+  @apply text-xl font-bold mb-5
+}
+
+#coins {
+  @apply w-full flex flex-wrap justify-center
+}
+
+#coin-card {
+  @apply flex flex-col w-80 m-5 gap-5 bg-white rounded-2xl p-10 shadow-lg
+}
+
+#coin-card img {
+  @apply w-10
+}
+
+#coin-card div {
+  @apply flex w-full justify-between items-center
+}
+
+#coin-card h1 {
+  @apply text-xl font-bold
+}
