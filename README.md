@@ -1,4 +1,4 @@
-# Market-Master, a JavaScript application that fetches and displays real time informationon the crypto and stock market.
+# Market-Master, a JavaScript application that fetches and displays real time information the crypto and stock market.
 
 ## Installation
 
